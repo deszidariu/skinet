@@ -1,9 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>// this is the target framework, we are using .net 10.0, which is the latest version of .net.
-    <Nullable>enable</Nullable>// whenever you use a reference type, you have to specify whether it can be null or not.
-    <ImplicitUsings>enable</ImplicitUsings>// this enables implicit using directives, so you don't have to manually add common namespaces.
+    <!-- This is the target framework; we are using .NET 10.0, which is the latest version of .NET. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Whenever you use a reference type, you have to specify whether it can be null or not. -->
+    <Nullable>enable</Nullable>
+    <!-- This enables implicit using directives, so you don't have to manually add common namespaces. -->
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
