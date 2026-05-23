@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>// this is the target framework, we are using .net 10.0, which is the latest version of .net.
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>// whenever you use a reference type, you have to specify whether it can be null or not.
+    <ImplicitUsings>enable</ImplicitUsings>// this enables implicit using directives, so you don't have to manually add common namespaces.
   </PropertyGroup>
 
   <ItemGroup>
