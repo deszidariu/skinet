@@ -1,0 +1,35 @@
+dotnet new globaljson --sdk-version 8.0.421
+dotnet new sln
+dotnet new webapi -o API -controllers
+dotnet new classlib -o Infrastructure
+dotnet sln add API
+dotnet sln add Infrastructure
+dotnet sln list
+cd .\API\
+dotnet add reference ..\Infrastructure
+dotnet restore
+dotnet build
+cd API
+dotnet run
+dotnet watch
+cd ..
+cd .\Infrastructure\
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.*
+cd ..
+cd API
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.*
+cd ..
+New-Item docker-compose.yml
+dotnet ef
+dotnet ef migrations add InitialCreate -s API -p Infrastructure
+dotnet ef database update -s API -p Infrastructure
+
+
+ng new client
+cd .\client\
+ng serve
+cd .\client\
+ng help
+ng generate help
+ng g c layout/header
+
