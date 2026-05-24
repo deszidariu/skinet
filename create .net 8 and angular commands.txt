@@ -20,6 +20,7 @@ cd API
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.*
 cd ..
 New-Item docker-compose.yml
+docker compose up -d
 dotnet ef
 dotnet ef migrations add InitialCreate -s API -p Infrastructure
 dotnet ef database update -s API -p Infrastructure
